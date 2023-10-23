@@ -1,72 +1,232 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo2.jpg" type="image/x-icon">
-    <title>Gersyn Puello</title>
+    <title>Fraider Tarazona</title>
+    <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Start front page -->
+    <!-- front page -->
     <header class="person">
         <nav class="nav container">
             <div class="nav_logo">
-                <h2 class="nav_tittle">Gersyn Puello</h2>
+                <h2 class="nav_title">Mateo Estiven Pallares Jacome</h2>
             </div>
-            <ul class="nav_link nav_link--menu">
+            <!-- ul.nav_link.nav_link_menu>(li.nav_items>a.nav_links{Texto})*4 -->
+            <ul class="nav_link nav_link_menu">
                 <li class="nav_items">
                     <a href="#" class="nav_links">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Quién soy</a>
+                    <a href="#" class="nav_links">Acerca de</a>
                 </li>
                 <li class="nav_items">
                     <a href="#" class="nav_links">Contacto</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Redes sociales</a>
+                    <a href="#" class="nav_links">Redes Sociales</a>
                 </li>
-                <img src="icons/exit.svg" alt="icon Close" class="nav_logo">
+                <img src="icons/exit.svg" alt="Icon Exit" class="nav_close">
             </ul>
-
             <div class="nav_menu">
-                <img src="icons/menu.svg" alt="icon menu" class="nav_img">
+                <img src="icons/menu.svg" alt="Icon Menu" class="nav_img">
             </div>
-
         </nav>
-        <section class="person_container">
-            <h1 class="person_tittle">Gersyn David Puello Chacon</h1>
-            <p class="person_paragraph">#CoachPtofesional</p>
-            <a href="" class="btn">¡Haz click!</a>
+        <section class="person_container container">
+            <h1 class="person_title">Estiven Pallares</h1>
+            <p class="person_paragraph">#CoachProfesional</p>
+            <a href="#" class="btn">Haz Click</a>
         </section>
     </header>
 
-    <!-- Start features diferents -->
+    <!-- options -->
     <main>
         <section class="container about">
-            <h2 class="subtittle">Lorem ipsum dolor sit amet.</h2>
-            <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis labore assumenda sequi quos temporibus, repellat tenetur quas beatae officia eligendi, dignissimos nesciunt ex, repellendus autem voluptate quaerat consectetur ipsam. Fuga.</p>
+            <h2 class="subtitle">Lorem, ipsum dolor sit adipisicing elit.</h2>
+            <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolore distinctio incidunt odio maiores ipsum porro quas illo! Natus, totam?</p>
 
             <div class="about_main">
+                <!-- (article.about_icons>img.about_icon+h3.about_title+p.about_paragraph)*3 -->
                 <article class="about_icons">
-                    <img src="icons/exit.svg" alt="" class="about_icon">
-                    <h3 class="anout_tittle">lorem insup</h3>
-                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, eaque.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Lorem Ipsun</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius ullam voluptas officiis nemo? Adipisci ratione id nam temporibus fuga.</p>
                 </article>
                 <article class="about_icons">
-                    <img src="icons/menu.svg" alt="" class="about_icon">
-                    <h3 class="anout_tittle">lorem insup</h3>
-                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, eaque.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Lorem Ipsun</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius ullam voluptas officiis nemo? Adipisci ratione id nam temporibus fuga.</p>
                 </article>
                 <article class="about_icons">
-                    <img src="icons/exit.svg" alt="" class="about_icon">
-                    <h3 class="anout_tittle">lorem insup</h3>
-                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, eaque.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Lorem Ipsun</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius ullam voluptas officiis nemo? Adipisci ratione id nam temporibus fuga.</p>
                 </article>
             </div>
         </section>
+        
+        <section class="options">
+            <div class="options_container container">
+                <div class="options_texts">
+                    <h2 class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                    <p class="options_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quod perferendis maiores aspernatur non culpa molestias illo incidunt laudantium. Sed error ea quasi quam aspernatur possimus doloremque nemo consequatur in libero, reprehenderit quo impedit eveniet, temporibus corporis accusantium, necessitatibus nobis nam sint facilis pariatur nihil quos. Suscipit esse tempore nesciunt.</p>
+                </div>
+                <figure class="options_picture">
+                    <img src="images/Perfil.jpg" alt="Imagen Options" class="options_img">
+                </figure>
+            </div>
+        </section>
+
+        <!-- slider -->
+        <section class="testimony">
+            <div class="testimony_container container">
+                <img src="icons/leftarrow.svg" alt="Icons" class="testimony_arrow" id="before">
+
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">mi nombre es Estiven Pallares
+                            <span class="testimony_course">estudiante de la ufpso</span>
+                        </h2>
+                        <p class="testimony_review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                            nesciunt ratione cumque beatae nemo, qui ullam esse libero quos quae. Quos, veniam facilis
+                            cumque doloribus rerum delectus inventore nisi labore!</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="images/face1.jpg" alt="Foto Usuario" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">mi nombre es Estiven Pallares 
+                            <span class="testimony_course">estudiante de la ufpso</span>
+                        </h2>
+                        <p class="testimony_review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                            nesciunt ratione cumque beatae nemo, qui ullam esse libero quos quae. Quos, veniam facilis
+                            cumque doloribus rerum delectus inventore nisi labore!</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="images/face2.jpg" alt="Foto Usuario" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="3">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">mi nombre es Estiven Pallares
+                            <span class="testimony_course">estudiante de la ufpso</span>
+                        </h2>
+                        <p class="testimony_review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                            nesciunt ratione cumque beatae nemo, qui ullam esse libero quos quae. Quos, veniam facilis
+                            cumque doloribus rerum delectus inventore nisi labore!</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="images/face3.jpg" alt="Foto Usuario" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body testimony_body--show" data-id="4">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">mi nombre es Estiven Pallares
+                            <span class="testimony_course">estudiante de la ufpso</span>
+                        </h2>
+                        <p class="testimony_review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                            nesciunt ratione cumque beatae nemo, qui ullam esse libero quos quae. Quos, veniam facilis
+                            cumque doloribus rerum delectus inventore nisi labore!</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="images/face4.jpg" alt="Foto Usuario" class="testimony_img">
+                    </figure>
+                </section>
+
+                <img src="icons/rightarrow.svg" alt="Icons" class="testimony_arrow" id="next">
+            </div>
+        </section>
+        <!-- questions -->
+        <section class="questions">
+            <div class="container">
+                <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+                <p class="questions_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ratione numquam placeat ipsum animi laboriosam unde. Incidunt dicta maxime fugiat.</p>
+                <section class="questions_container">
+                    <article class="questions_padding">
+                        <div class="questions_answer">
+                            <h3 class="questions_title">¿Lorem, ipsum dolor.?
+                                <span class="questions_arrow"><img src="icons/arrow.svg" alt="" class="questions_img">
+                                </span>
+                            </h3>
+                            <p class="questions_show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas quibusdam, corporis facere voluptatem in? Maiores minima eveniet dolor fugiat hic, incidunt alias quis placeat. Iste nisi et corrupti voluptates!</p>
+                        </div>
+                    </article>
+                    <article class="questions_padding">
+                        <div class="questions_answer">
+                            <h3 class="questions_title">¿Lorem, ipsum dolor.?
+                                <span class="questions_arrow"><img src="icons/arrow.svg" alt="" class="questions_img">
+                                </span>
+                            </h3>
+                            <p class="questions_show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas quibusdam, corporis facere voluptatem in? Maiores minima eveniet dolor fugiat hic, incidunt alias quis placeat. Iste nisi et corrupti voluptates!</p>
+                        </div>
+                    </article>
+                    <article class="questions_padding">
+                        <div class="questions_answer">
+                            <h3 class="questions_title">¿Lorem, ipsum dolor.?
+                                <span class="questions_arrow"><img src="icons/arrow.svg" alt="" class="questions_img">
+                                </span>
+                            </h3>
+                            <p class="questions_show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas quibusdam, corporis facere voluptatem in? Maiores minima eveniet dolor fugiat hic, incidunt alias quis placeat. Iste nisi et corrupti voluptates!</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="questions_ofter">
+                    <h2 class="subtitle">¿Lorem ipsum dolor sit amet.?</h2>
+                    <p class="questions_copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio cum nam explicabo debitis laboriosam mollitia soluta. At recusandae ea minima.</p>
+                    <a href="#" class="cta">Lorem, ipsum dolor.</a>
+                </section>
+            </div>
+        </section>
     </main>
+
+
+        
+    <footer class="footer">
+        <section class="footer_container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer_title">Estiven Pallares</h2>
+                <ul class="nav_link nav_link--footer">
+                    <!-- (li.nav_items>a.nav_links{Option})*4 -->
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Option</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Option</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Option</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Option</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer_form">
+                <h2 class="footer_info">Suscribete</h2>
+                <!-- .footer_inputs>input:email.footer_input+input:submit.footer_submit -->
+                <div class="footer_inputs">
+                    <input type="email" class="footer_input" placeholder="Escribe tu E-Mail">
+                    <input type="submit" value="Contáctanos" class="footer_submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a href="#" class="footer_icon"><img src="icons/facebook.svg" alt="Icon Facebook" class="footer_img"></a>
+                <a href="#" class="footer_icon"><img src="icons/instagram.svg" alt="Icon Instagram" class="footer_img"></a>
+                <a href="#" class="footer_icon"><img src="icons/twitter.svg" alt="Icon Twitter" class="footer_img"></a>
+            </div>
+            <h3 class="footer_copyright">Derechos reservados &copy; Estiven Pallares</h3>
+        </section>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/questions.js"></script>
 </body>
 </html>
