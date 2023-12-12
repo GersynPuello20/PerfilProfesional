@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja {
+            display: flex;
+            position: relative;
+            height: 500px;
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        
+        .item{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            background-color: brown;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja">
+        <div class="item">
+            <label for="" id="text_trhee">Ingrese una palabra</label>
+            <br>
+            <input type="text" id="text_var">
+            <br>
+            <div id="salida">
+                <p id="texto_salida"></p>
+            </div>
+            <br>
+            <button onclick="mostrarMensaje()">ENVIAR</button>
+            <br>
+            <button id="limpiar">limpiar</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        function mostrarMensaje() {
+            let entrada = document.getElementById("text_var").value;
+            document.getElementById("texto_salida").innerHTML =
+                esPalindromo(entrada)
+                    ? "El texto ingresado es palindromo" :
+                    "El texto ingresado NO es palindromo"
+        }
+
+
+        function esPalindromo(entrada) {
+
+            let limpiarCadena = entrada.replace(/[^a-zA-Z0-9]/g, "");
+            let cadenaminuscula = limpiarCadena.toLowerCase();
+            let arreglominiscula = cadenaminuscula.split("");
+            let minusculasRevertidas = arreglominiscula.reverse();
+            let cadenaMinusculaRevertida = minusculasRevertidas.join("");
+
+            return cadenaMinusculaRevertida == cadenaminuscula ? true : false;
+
+        }
+
+        // function esPalindromo(entrada){
+        //     let limpiarCadena = entrada.replace(/[^a-zA-Z0-9]/g, "").toLowerCase;
+        //     let cadenaRevertida = limpiarCadena.split("").reverse().join("");
+
+        //     return limpiarCadena == cadenaRevertida ? true : false;
+        // }
+    </script>
+</body>
+
+</html>
