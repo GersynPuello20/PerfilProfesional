@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto uno</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            width: 100%;
+        }
+        .container{
+            width: 550px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <label for="">Ingrese</label>
+        <input type="text" id="text1" autofocus>
+        <br>
+        <div class="item1">
+        <label for="">Ingrese </label>
+        <input type="text" id="text2"></div>
+        
+        
+        <button onclick="Mensaje()">Enviar</button>
+        <br>
+        <button id="limpiar">limpiar</button>
+        <br>
+        <p id="texto_salida"></p>
+    </div>
+
+    <script>
+
+
+
+        function Mensaje() {
+            let numero1 = document.getElementById("text1").value;
+            let numero2 = document.getElementById("text2").value;
+            
+            for (let i = 0; i <= numero2; i++) {
+                let tabla = numero1 * i;
+                if (tabla == 0) {
+                    console.log("Todo numero multiplicado por 0 es igual a 0");
+                }
+                else {
+                    var result =+  console.log(numero1 + "*" + i + "= " + tabla);
+                }
+                document.getElementById("texto_salida").innerHTML = result;
+            }
+
+            
+        }
+
+        
+
+        const btn_limpiar = document.getElementById("limpiar");
+
+         
+
+
+
+    </script>
+</body>
+
+</html>

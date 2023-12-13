@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Dos</title>
+</head>
+<body>
+    <div class="container">
+        <label for=""> ingrese un número</label>
+        <input type="number" id="num" autofocus>
+        <button onclick="enviar()"> Enviar</button>
+        <br>
+        <p id="cantidadNumeros"></p>
+        <br>
+        <p id="suma"></p>
+        <br>
+        <p id="resta"></p>
+        <br>
+        <p id="multi"></p>
+        <br>
+        <p id="promedio"></p>
+        <br>
+        <p id="alert"></p>
+   
+    </div>
+
+    <script>
+        var number = document.getElementById("num");
+
+        function enviar(){
+            let numberOne = number.replace((/[^a-zA-Z0-9]/g, ""));
+
+            for (let i = 0; i < numberOne.length; i++) {
+                const cont =+ i;
+                let suma = [i+1] + [i+2]; 
+
+            } 
+            document.getElementById("cantidadNumeros").innerHTML = cont;
+
+            
+
+        }
+    </script>
+</body>
+</html>
