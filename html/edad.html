@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        background-color: pink;
+        width: 500px;
+        height: 500px;
+        display: grid;
+        place-items: center;
+      }
+
+      .container input {
+        height: 20px;
+        width: 100px;
+      }
+      .container div{
+        width: 100px;
+        height: 30px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body onload = "load_page()">
+    <div class="container">
+      <label for="date">Ingrese su fecha de nacimiento: </label>
+      <input type="date" size="20px" id="fecha" onblur="salir()" />
+      <button onclick="entrada()">Click</button>
+      <label for="">Dia:</label>
+      <input type="text" size="20px" id="dia" disabled placeholder="Dia" />
+      <label for="">Mes:</label>
+      <input type="text" size="20px" id="mes" disabled placeholder="mes" />
+      <label for="">Año:</label>
+      <input type="text" size="20px" id="año" disabled placeholder="año" />
+      <label for="">Hora</label>
+      <input type="text" size="20px" id="hora" disabled placeholder="hora" />
+      <div id="fecha_actual"></div>
+    </div>
+
+    <script>
+        
+      function salir() {
+        let fecha = document.getElementById("fecha").value;
+        if (fecha.length < 1) {
+          Swal.fire({
+            position: "top",
+            icon: "error",
+            title: "no ingresaste ninguna fecha",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+        document.getElementById("fecha").focus();
+      }
+
+      function entrada(){
+        let fecha = document.getElementById("fecha").value;
+         if (fecha.length > 1) {
+        Swal.fire({
+          position: "top",
+          icon: "success",
+          title: "Su fecha de nacimiento es: ",
+          text: fecha,
+          showConfirmButton: false,
+          timer: 2500,
+        });
+      }
+
+      let fechatransformada = new Date(fecha);
+      document.getElementById("dia").value = fechatransformada.getDate() +1;
+      document.getElementById("mes").value = fechatransformada.getMonth() +1;
+      document.getElementById("año").value = fechatransformada.getFullYear();
+
+      let fechaActual = new Date();
+      document.getElementById("hora").value = fechaActual.getHours();
+
+      }
+
+      function load_page() {
+            let fechaActual = new Date();
+            let day = fechaActual.getDate() ;
+            let montth = fechaActual.getMonth()+1;
+            let year = fechaActual.getFullYear();
+
+            document.getElementById("fecha_actual").innerText = day +" / "+ montth + " / "+ year;
+
+        }
+    </script>
+  </body>
+</html>

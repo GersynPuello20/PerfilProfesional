@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            display: grid;
+            place-items: center;
+
+        }
+        table{
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body onload="load_page()">
+<table border="1px">
+    <thead>
+        <tr>
+            <th>num1</th>
+            <th>num2</th>
+            <th>num3</th>
+            <th>num4</th>
+            <th>num5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="num1"></th>
+            <th id="num2"></th>
+            <th id="num3"></th>
+            <th id="num4"></th>
+            <th id="num5"></th>
+        </tr>
+        <tr>
+            <th id="cas1">...</th>
+            <th id="cas2">...</th>
+            <th id="cas3">...</th>
+            <th id="cas4">...</th>
+            <th id="cas5">...</th>
+        </tr>
+    </tbody>
+</table>
+<button onclick="calculate_odd()">calculate odd numbers</button>
+<script>
+    function load_page(){
+        var numbers = [4,6,7,8,9];
+        document.getElementById("num1").innerText = numbers[0];
+        document.getElementById("num2").innerText = numbers[1];
+        document.getElementById("num3").innerText = numbers[2];
+        document.getElementById("num4").innerText = numbers[3];
+        document.getElementById("num5").innerText = numbers[4];
+        console.log(num1.innerText);
+    }
+    function calculate_odd(){
+        console.log(num1.innerText);
+        if(num1.innerText % 2 == 0){
+            document.getElementById("cas1").innerText = "es par";
+        }
+        else{
+document.getElementById("cas1").innerText = "es par";
+        }
+        if(num1.innerText % 2 == 0){
+            document.getElementById("cas1").style.backgroundColor = "green";
+            document.getElementById("cas1").innerText = "es par";
+            
+        }
+        else{
+            document.getElementById("cas1").innerText = "no es par";
+        }
+        if(num2.innerText % 2 == 0){
+            document.getElementById("cas2").innerText = "es par";
+        }
+        else{
+            document.getElementById("cas2").innerText = "no es par";
+        }
+        if(num3.innerText % 2 == 0){
+            document.getElementById("cas3").innerText = "es par";
+        }
+        else{
+            document.getElementById("cas3").innerText = "no es par";
+        }
+        if(num4.innerText % 2 == 0){
+            document.getElementById("cas4").innerText = "es par";
+        }
+        else{
+            document.getElementById("cas4").innerText = "no es par";
+        }
+         if(num5.innerText % 2 == 0){
+            document.getElementById("cas5").innerText = "es par";
+        }
+        else{
+            document.getElementById("cas5").innerText = "no es par";
+        }
+    }
+</script>
+    
+</body>
+</html>

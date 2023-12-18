@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilitacion</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 100%;
+            border-radius: 8px;
+            border: 3px solid blanchedalmond;
+            background-color: antiquewhite;
+
+        }
+
+        .form .caja {
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+
+        .form .caja button {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="caja">
+            <h1>Bienvenido a formulario</h1>
+            <label for="">Ingrese sus nombres : </label>
+            <br>
+            <input type="text" id="nombres" autofocus>
+            <br>
+            <label for=""> Ingrese sus apellidos :</label>
+            <br>
+            <input type="text" id="apellidos">
+            <br>
+            <label for="">Ingrese su edad :</label>
+            <br>
+            <input type="number" id="edad">
+            <br>
+            <br>
+            <label for="">Seleccione su sexo :</label>
+            <br>
+
+            <div>
+                <label for="">Másculino</label>
+                <input type="radio" name="sexo" id="masculino">
+            </div>
+            <div>
+                <label for="">Femenino</label>
+                <input type="radio" name="sexo" id="femenino">
+            </div>
+            <br>
+            <label for="">Ingrese su correo electrónico : </label>
+            <br>
+            <input type="email" id="email">
+            <br>
+            <label for="">Ingrese su contraseña :</label>
+            <br>
+            <input type="password" id="password">
+            <br>
+            <label for="">Confirmar contraseña :</label>
+            <br>
+            <input type="password" id="password2">
+            <br>
+            <p id="texto_salida"> </p>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </div>
+    </div>
+    <script>
+        function enviar() {
+            let nombres = document.getElementById("nombres").value;
+            let apellidos = document.getElementById("apellidos").value;
+            let edad = document.getElementById("edad").value;
+            let sexoM = document.getElementById("masculino").value;
+            let sexoF = document.getElementById("femenino").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let password2 = document.getElementById("password2").value;
+            console.log(nombres);
+            if (nombres == "" || apellidos == "" || edad == ""
+                || email == "" || password == "" || password2 == "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Ingresa todos los datos, por favor!",
+                    timer: 2000
+                });
+            }
+
+            if (password == password2) {
+                document.getElementById("texto_salida").innerHTML = nombres + "\n" + apellidos + "\n" + edad + "\n" + email ;
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Contraseñas no coinciden!",
+                    timer: 2000
+                });
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
